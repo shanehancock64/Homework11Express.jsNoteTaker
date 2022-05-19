@@ -10,5 +10,15 @@ app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 app.use(express.static('public'));
 
+// Create a list of routes. 
 
+// Get Route
+app.get('/api/notes', (req, res) => {
+  res.json({message: 'success'});
+});
+
+// Post Route
+
+
+// Delete Route
 app.listen(PORT, () => console.log(`listening on PORT: ${PORT}`));
